@@ -8,20 +8,19 @@ MODEL_NAME = "sentence-transformers/all-MiniLM-L6-v2"
 def get_embeddings_model():
 
     print(f"Loading embedding model '{MODEL_NAME}'...")
-    return SentenceTransformer
+    return SentenceTransformer(MODEL_NAME)
     
 
 def embed_documents(chunks: list[SourceDocument]):
 
-    if chunks is None:
+    if not chunks:
         return []
+    
+    model = get_embeddings_model()
 
+    texts = [chunk.content for chunk in chunks]
 
-    for chunk in chunks:
+    embeddings = model.encode(texts)
 
-        embedding = get_embeddings_model(chunk.content)
-        embedding.tolist()
+    return embeddings.tolist()
 
-    return
-
-a = get_embeddings_model()
