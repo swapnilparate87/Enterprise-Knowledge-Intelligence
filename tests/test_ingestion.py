@@ -15,7 +15,7 @@ from app.ingestion.chunking import chunk_document
 
 RUN_LOADERS = True
 RUN_CHUNKING = True
-RUN_EMBEDDINGS = True  # Enable after embeddings.py is implemented
+RUN_EMBEDDINGS = True  
 
 
 # -----------------------------------------------
