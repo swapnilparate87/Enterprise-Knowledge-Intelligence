@@ -23,4 +23,3 @@ def embed_documents(chunks: list[SourceDocument]):
     embeddings = model.encode(texts)
 
     return embeddings.tolist()
-
