@@ -1,0 +1,196 @@
+VENDOR ONBOARDING PROCEDURE
+===========================
+
+Document ID:                OPS-004
+Department:                 Operations and Procurement
+Document type:              Procedure
+Owner:                      Head of Procurement
+Version:                    3.0
+Status:                     APPROVED
+Effective / last reviewed:  2025-10-09
+Audience:                   Budget owners, managers and Finance/Procurement staff
+Related documents:          OPS-003, SEC-011, OPS-009, OPS-005
+
+SUMMARY: Step-by-step procedure for onboarding a new vendor into the NorthBuy vendor master at
+Northstar Systems, covering required documents, security assessment for vendors touching
+Confidential or Restricted data, timelines, payment terms and common rejection reasons.
+
+SYNTHETIC DOCUMENT - Northstar Systems is a fictional company. This document exists for development,
+testing and demonstration only and is not real legal, employment, security or compliance advice.
+
+
+1. PURPOSE AND SCOPE
+--------------------
+
+This procedure explains how a new vendor, supplier or service provider is onboarded into the
+NorthBuy vendor master at Northstar Systems Private Limited. It applies to every vendor that
+Northstar intends to pay, regardless of purchase value, including consultants, software and cloud
+providers, facility service companies and staffing agencies. It is used by budget owners who request
+a vendor, by Procurement staff who run the onboarding, and by Finance staff who release the first
+payment.
+
+The rule behind the procedure is simple: a vendor must be onboarded in the NorthBuy vendor master
+before a purchase order (PO) is issued. No commitment may be made to a vendor that is not in the
+master, and invoices from non-onboarded vendors are not paid. Utilities and pre-approved statutory
+payments are the only exceptions and are listed in OPS-001.
+
+This procedure does not cover the purchase decision itself (quotations, RFPs and approval limits are
+in OPS-001 and OPS-003) or contract drafting and renewal (OPS-005). Invoice handling after
+onboarding is described in OPS-009, which is currently a draft.
+
+
+2. DEFINITIONS
+--------------
+
+  - Vendor master: the controlled list of approved vendors held in NorthBuy, with bank details, tax
+    identifiers, risk tier and contract links.
+  - Requester: the budget owner or employee who needs the vendor.
+  - Complete document set: all documents listed in section 4 for the vendor's risk category, in
+    legible form and signed where required.
+  - Vendor risk tier: Critical, High, Moderate or Low, assigned by data access and system
+    criticality as described in SEC-011.
+  - MSME vendor: a vendor holding a valid micro, small or medium enterprise registration
+    (illustrative; to be verified by Legal before external use).
+
+
+3. ROLES AND RESPONSIBILITIES
+-----------------------------
+
+  Role                       | Responsibility
+  ---------------------------+-------------------------------------------------------------------------------------------------------------------
+  Requester                  | Raises the vendor request in NorthBuy, supplies business justification and a single point of contact at the vendor
+  Procurement Desk           | Checks documents, creates the vendor record, runs duplicate and sanctions checks, completes onboarding
+  Security (via IT/Security) | Reviews the security questionnaire and assurance report for vendors that access Confidential or Restricted data
+  Legal                      | Reviews the Data Processing Agreement and any non-standard NDA terms
+  Finance Controller         | Verifies bank details and releases the record for payment
+
+
+4. DOCUMENTS REQUIRED
+---------------------
+
+Every vendor must provide the following documents before onboarding can start:
+
+  1. PAN (Permanent Account Number) card or certificate.
+  2. GSTIN registration certificate, where the vendor is GST registered.
+  3. A cancelled cheque or bank proof showing account name, number and IFSC code.
+  4. A signed Non-Disclosure Agreement (NDA) on the Northstar template, or approved vendor-side NDA
+     reviewed by Legal.
+  5. A signed conflict-of-interest declaration.
+
+In addition, a vendor that will access Confidential or Restricted data, or connect to Northstar
+systems, must complete the security questionnaire. Critical and High risk vendors must also submit
+an independent assurance report, for example a SOC 2 Type II report or an ISO 27001 certificate
+(illustrative), before any PO is issued. If personal data will be shared, a Data Processing
+Agreement (DPA) must be signed before the first data transfer.
+
+MSME vendors should also submit their registration certificate so that the shorter payment term is
+applied from the first invoice.
+
+
+5. STEP-BY-STEP ONBOARDING
+--------------------------
+
+  1. The requester raises a vendor request in NorthBuy, naming the proposed service, expected annual
+     spend, cost-centre code and the data the vendor will touch.
+  2. The requester collects the documents in section 4 from the vendor and attaches them. A request
+     without all documents is marked incomplete and returned.
+  3. Procurement checks that the PAN, GSTIN and bank details are consistent (same legal name), and
+     searches the vendor master for duplicates. A vendor must never be created twice under different
+     spellings.
+  4. Procurement assigns a provisional risk tier. If the tier is Critical or High, or if any
+     Confidential or Restricted data is involved, Procurement sends the request to Security with the
+     questionnaire.
+  5. Security assesses the questionnaire and assurance report. The assessment SLA is 10 business
+     days from the date the questionnaire is complete.
+  6. Legal reviews the DPA where personal data is involved.
+  7. The Finance Controller verifies the bank details by a small test credit or a call-back to a
+     known contact, never to a number supplied only on the request form.
+  8. Procurement activates the vendor in the NorthBuy vendor master and notifies the requester.
+     Procurement completes onboarding within 5 business days of receiving a complete document set;
+     security assessment time for Critical and High vendors runs in parallel and is counted
+     separately.
+
+Only after step 8 may the requester raise a purchase requisition and PO.
+
+
+6. TIMELINES
+------------
+
+  Stage                                          | Target
+  -----------------------------------------------+----------------------------------------------
+  Onboarding after complete document set         | 5 business days
+  Security assessment (Critical or High vendors) | 10 business days from complete questionnaire
+  Bank detail verification                       | 2 business days, within the onboarding window
+  Reassessment of Critical vendors               | Annually
+  Reassessment of High vendors                   | Every 2 years
+
+Requesters should start onboarding at least 15 business days before they need the first PO for a
+Critical or High vendor. Urgent requests do not change the controls; they only change the order in
+which Procurement works its queue.
+
+
+7. PAYMENT TERMS AND ADVANCES
+-----------------------------
+
+Standard payment terms are Net 45 days from invoice receipt. MSME-registered vendors are paid on Net
+30 terms (illustrative). Payment runs happen every Tuesday and Friday. An advance payment of up to
+30% of PO value is possible only for an onboarded vendor and needs CFO approval. Procurement records
+agreed terms on the vendor record so that Finance applies them automatically.
+
+Example: A Mumbai-based facilities contractor with a valid MSME certificate invoices INR 1,80,000.
+Because the vendor was onboarded with the certificate attached, Finance schedules payment on Net 30
+terms from invoice receipt instead of Net 45.
+
+
+8. CHANGES TO VENDOR DETAILS
+----------------------------
+
+Bank detail changes are a common fraud route. A vendor asking to change bank details must send a
+signed letter on letterhead and a new cancelled cheque. Procurement and the Finance Controller must
+verify the request by calling a number already held in the vendor master, and the change takes
+effect only after this verification. No bank detail change may be accepted by email alone. Changes
+to legal name, PAN or GSTIN need a fresh review as if the vendor were new.
+
+A vendor with no PO or payment for 24 months is marked inactive. Inactive vendors can be reactivated
+by Procurement after refreshing the documents.
+
+
+9. COMMON REJECTION REASONS AND EDGE CASES
+------------------------------------------
+
+  - Name on PAN does not match the bank account name: Procurement returns the request until the
+    vendor provides a name-change proof or an account in the correct name.
+  - Vendor will receive Restricted data but has no assurance report: onboarding stays open, but no
+    PO may be issued. The requester may ask for a time-limited security exception through the CISO
+    delegate; exceptions expire in at most 90 days.
+  - Individual consultants without GST: may be onboarded with PAN and bank proof; tax treatment is
+    decided by Finance.
+  - Sole proprietors using personal accounts: allowed only for low-value services and with Finance
+    Controller approval.
+  - Related-party vendors: a conflict-of-interest declaration that discloses a relationship with a
+    Northstar employee must be sent to the department head and Procurement; the employee must not
+    take part in selecting or approving the vendor.
+
+Example: The Customer Success department wants to engage a transcription vendor that will listen to
+recorded customer calls. Because call recordings may contain customer data, Procurement classifies
+the vendor as High risk, requests the security questionnaire and a DPA, and does not allow a PO
+until Security has finished its assessment.
+
+
+10. RELATED DOCUMENTS
+---------------------
+
+Quotation rules and approval limits are in OPS-001 and OPS-003. Vendor security tiers and
+assessments are described in SEC-011. Contract signature and renewal rules are in OPS-005. The draft
+invoice processing SOP, OPS-009, describes how invoices from onboarded vendors will be matched and
+paid once it is approved.
+
+
+11. REVISION HISTORY
+--------------------
+
+  Version | Date       | Change
+  --------+------------+-----------------------------------------------------------------
+  2.0     | 2024-11-04 | Added assurance report requirement for Critical and High vendors
+  3.0     | 2025-10-09 | Clarified bank detail verification and MSME terms
+

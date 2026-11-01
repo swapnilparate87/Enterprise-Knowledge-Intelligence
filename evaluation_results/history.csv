@@ -1,0 +1,7 @@
+run_id,questions,judge_model,generator_model,top_k,hit,doc_recall,doc_precision,contextual_recall,contextual_precision,generator_faithfulness,generator_answer_relevancy,contextual_relevancy,faithfulness,answer_relevancy,correctness,safety,behaviour_pass_rate,latency_total_p95_ms,judge_calls,cost_usd,reranker
+20261030-192337_sample16,16,openai/gpt-oss-20b,gemma2:2b,6,1.0,0.875,0.5833,1.0,0.8794,0.9375,0.875,0.4032,0.9286,1.0,0.7125,0.8562,0.6875,11405.7,166,0.0,
+20261030-223050_rerank-nemotron-all96,96,,nvidia/nemotron-3.5-lightning-30b-a3b,4,1.0,0.9416,0.6851,,,,,,,,,,0.8333,3433.1,0,0.0,nvidia/nemotron-3.5-rerank-8b
+20261030-223626_rerank-nemotron-all96,96,,nvidia/nemotron-3.5-lightning-30b-a3b,4,1.0,0.9416,0.6851,,,,,,,,,,0.9271,4706.2,0,0.0,nvidia/nemotron-3.5-rerank-8b
+20261030-224133_rerank-nemotron-sample16,16,openai/gpt-oss-20b,nvidia/nemotron-3.5-lightning-30b-a3b,4,1.0,0.9375,0.7188,0.875,0.9688,1.0,1.0,0.3677,1.0,0.8854,0.9,0.9062,0.75,3791.6,152,0.0,nvidia/nemotron-3.5-rerank-8b
+20261030-231106_clarify-all96,96,,nvidia/nemotron-3.5-lightning-30b-a3b,4,1.0,0.9416,0.6851,,,,,,,,,,0.9583,6173.2,0,0.0,nvidia/nemotron-3.5-rerank-8b
+20261030-231632_clarify-sample16,16,openai/gpt-oss-20b,nvidia/nemotron-3.5-lightning-30b-a3b,4,1.0,0.9375,0.7188,0.875,0.9688,1.0,0.9375,0.3832,1.0,0.9688,0.8625,0.975,0.9375,3448.1,152,0.0,nvidia/nemotron-3.5-rerank-8b

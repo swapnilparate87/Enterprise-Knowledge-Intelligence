@@ -1,0 +1,144 @@
+{
+  "retriever": {
+    "deterministic": {
+      "hit": 1.0,
+      "doc_recall": 0.875,
+      "doc_precision": 0.5833,
+      "mrr": 0.8333
+    },
+    "deepeval": {
+      "contextual_recall": {
+        "mean": 1.0,
+        "pass_rate": 1.0,
+        "n": 8
+      },
+      "contextual_precision": {
+        "mean": 0.8794,
+        "pass_rate": 1.0,
+        "n": 8
+      }
+    }
+  },
+  "generator_isolated": {
+    "faithfulness": {
+      "mean": 0.9375,
+      "pass_rate": 1.0,
+      "n": 8
+    },
+    "answer_relevancy": {
+      "mean": 0.875,
+      "pass_rate": 1.0,
+      "n": 8
+    }
+  },
+  "pipeline": {
+    "contextual_relevancy": {
+      "mean": 0.4032,
+      "pass_rate": 0.125,
+      "n": 8
+    },
+    "faithfulness": {
+      "mean": 0.9286,
+      "pass_rate": 1.0,
+      "n": 7
+    },
+    "answer_relevancy": {
+      "mean": 1.0,
+      "pass_rate": 1.0,
+      "n": 8
+    }
+  },
+  "application": {
+    "latency_ms": {
+      "retrieval": {
+        "p50": 155.4,
+        "p95": 1335.9,
+        "mean": 363.9714,
+        "max": 2020.2,
+        "n": 14
+      },
+      "generation": {
+        "p50": 8596.2,
+        "p95": 9881.5,
+        "mean": 8719.1286,
+        "max": 10064.7,
+        "n": 14
+      },
+      "total": {
+        "p50": 8852.1,
+        "p95": 11405.7,
+        "mean": 9089.5857,
+        "max": 11924.9,
+        "n": 14
+      },
+      "generation_isolated": {
+        "p50": 4375.8,
+        "p95": 5394.4,
+        "mean": 4549.8,
+        "max": 5394.4,
+        "n": 8
+      }
+    },
+    "quality": {
+      "correctness": {
+        "mean": 0.7125,
+        "pass_rate": 0.75,
+        "n": 8
+      },
+      "behaviour_pass_rate": 0.6875,
+      "pass_rate_by_category": {
+        "ambiguous": 0.0,
+        "direct_factual": 0.5,
+        "exception_eligibility": 1.0,
+        "instruction_override": 1.0,
+        "insufficient_evidence": 1.0,
+        "multi_document": 1.0,
+        "nonexistent_entity": 0.0,
+        "procedure_policy": 1.0
+      }
+    },
+    "safety": {
+      "geval_safety": {
+        "mean": 0.8562,
+        "pass_rate": 0.875,
+        "n": 16
+      },
+      "abstention_rate_on_unsupported": 0.5,
+      "injection_declined": "2/2",
+      "false_abstention_rate_on_supported": 0.0
+    },
+    "operations": {
+      "questions": 16,
+      "pipeline_errors": 0,
+      "metric_errors": 1,
+      "errors_by_stage": {
+        "faithfulness": 1
+      },
+      "judge_calls": 166,
+      "judge_retries": 0,
+      "judge_rate_limited_429": 0,
+      "judge_timeouts": 0,
+      "judge_server_errors": 0,
+      "judge_failed_calls": 0,
+      "judge_latency_s": {
+        "p50": 17.8,
+        "p95": 87.8
+      },
+      "judge_tokens": {
+        "input": 116134,
+        "output": 52965
+      },
+      "wall_time_s": {
+        "pipeline": 163.7,
+        "judge": 1334.6
+      },
+      "pipeline_throughput_q_per_min": 5.86
+    },
+    "cost_usd": {
+      "generator": 0.0,
+      "judge": 0.0,
+      "per_question": 0.0,
+      "note": "Generator runs locally on Ollama. Judge priced with JUDGE_PRICE_INPUT/OUTPUT (USD per 1M tokens); NVIDIA's hosted trial API is free."
+    }
+  }
+}

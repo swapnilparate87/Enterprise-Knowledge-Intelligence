@@ -1,0 +1,12 @@
+.env
+.venv/
+venv/
+.git/
+.vscode/
+.pytest_cache/
+.deepeval/
+**/__pycache__/
+*.py[cod]
+evaluation_results/
+tests/
+BUILD_GUIDE.md

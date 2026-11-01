@@ -1,0 +1,186 @@
+KNOWLEDGE BASE ARTICLE AUTHORING GUIDE
+======================================
+
+Document ID:                CS-010
+Department:                 Product and Customer Support
+Document type:              Guide
+Owner:                      Head of Support
+Version:                    0.9
+Status:                     DRAFT
+Effective / last reviewed:  2026-09-15
+Audience:                   Customer Success, Support and Engineering staff
+Related documents:          CS-002, CS-007
+
+SUMMARY: DRAFT guide describing how Support and Customer Success staff should write, review, publish
+and retire Knowledge Base articles using the Problem, Environment, Cause, Resolution, Related
+articles template. Not yet in force.
+
+SYNTHETIC DOCUMENT - Northstar Systems is a fictional company. This document exists for development,
+testing and demonstration only and is not real legal, employment, security or compliance advice.
+
+
+1. PURPOSE AND SCOPE
+--------------------
+
+DRAFT NOTICE: this document is a DRAFT (version 0.9) and is not yet in force. The approved current
+practice for Knowledge Base articles is whatever the related approved documents say, in particular
+CS-002 for the troubleshooting content and CS-007 for how tickets lead to articles. Where this draft
+differs from approved practice, approved practice applies until this guide is approved and
+published.
+
+The purpose of this draft is to give authors one consistent method for writing Knowledge Base (KB)
+articles about the Northstar Nexus Platform, Nexus Connect and Nexus Insight, so customers and
+Support Engineers can find a correct answer without opening a ticket. The scope covers article
+structure, writing style, the review and publication workflow, review cadence, and archiving. It
+applies to Support Engineers, Support Leads, CSMs and Engineering staff who contribute articles. It
+does not change ticket triage, priorities or customer commitments.
+
+
+2. DEFINITIONS
+--------------
+
+  - KB article: a customer-readable or internal-readable page that explains one problem and its
+    resolution.
+  - Author: the person who writes the article.
+  - Reviewer: a second person who checks the article before it is published. Two-person review is
+    proposed to be mandatory.
+  - Status: Draft, Published or Archived.
+  - Article owner: the Support Lead responsible for the article after publication.
+
+
+3. ARTICLE TEMPLATE
+-------------------
+
+Every article should use five headings in this order:
+
+  1. Problem: what the customer sees, including the exact error text or code, such as NX-2004.
+  2. Environment: the Nexus version, product (Platform, Connect or Insight), and any relevant
+     Connector or configuration.
+  3. Cause: why the problem occurs, in one or two plain sentences.
+  4. Resolution: numbered steps that a customer can follow; one action per step.
+  5. Related articles: links to articles on neighbouring problems.
+
+Example: An article for NX-3010 would have the problem as "requests fail with HTTP 429 and code
+NX-3010", environment as "any supported Nexus version", cause as "the tenant exceeded the default
+limit of 1,000 requests per minute", and resolution as "add backoff, honour the Retry-After header,
+then retry".
+
+
+4. WRITING RULES
+----------------
+
+  - Use plain, short sentences. Write in English; a Hindi version may be added on request for India
+    customers.
+  - Use the product terms exactly: Workspace, Pipeline, Connector and Webhook.
+  - State the version affected. Check support dates in CS-006 and never write that a version is
+    supported without checking.
+  - Do not include customer-specific data such as tenant IDs, customer names, request IDs or
+    personal data in any article.
+  - Do not include internal system names such as NorthAssist, NorthDesk or NorthWatch in customer-
+    facing articles. Internal-only articles may name them.
+  - Do not promise delivery dates or future features. Do not describe an unreleased fix.
+  - Keep the title searchable: begin with the symptom or code, for example "NX-4003 schema mismatch
+    in a Pipeline".
+  - Use the documented values: default connector timeout 30 seconds, adjustable up to 120 seconds;
+    rate limit 1,000 requests per minute per tenant.
+  - Do not include security-sensitive details. Anything about a vulnerability must be agreed with
+    the Security Desk first.
+
+
+5. WORKFLOW
+-----------
+
+
+5.1 Create
+
+An author writes the article in Draft status after a resolved ticket that has been seen at least
+twice, or after a P1 or P2 incident that produced a reusable resolution. A ticket-derived article
+must have all customer data removed before it is saved.
+
+
+5.2 Review
+
+A second person, who is not the author, reviews every article before publication. The reviewer
+checks that the steps work on the stated version, that the language is clear and neutral, that no
+customer data is present, and that links are correct. A change to a security-related article also
+needs the Security Desk's agreement.
+
+
+5.3 Publish
+
+The reviewer moves the article from Draft to Published. The article owner is recorded. Articles for
+customer-facing portals are published through NorthAssist.
+
+
+5.4 Review cycle and archive
+
+Every published article should be reviewed at least every 12 months. At review, the owner checks the
+steps against the current supported versions. If the problem no longer exists, or the only affected
+version is out of support, the article is moved to Archived. Archived articles are not shown to
+customers but are kept for reference. An article must not be deleted unless it contains data that
+should not have been stored.
+
+
+6. QUALITY CHECKS
+-----------------
+
+The Head of Support proposes a monthly sample of articles. Each is scored on accuracy, clarity,
+template compliance and absence of customer data. Articles scoring poorly are returned to Draft.
+Useful measures include how often an article is used to deflect a ticket and the proportion of
+tickets closed with a linked article.
+
+
+7. EXAMPLES OF GOOD AND POOR PRACTICE
+-------------------------------------
+
+Good: "Resolution: 1. Open Workspace settings. 2. Select API tokens. 3. Rotate the token. 4. Update
+the token in your integration."
+
+Poor: "Contact support to get a new token." This is not a resolution, because the customer can
+rotate the token without help.
+
+Good: stating that the timeout can be raised up to 120 seconds after checking endpoint latency.
+
+Poor: stating that the connector will never time out. This is untrue and risks customer trust.
+
+
+7A. LINKING ARTICLES TO TICKETS
+-------------------------------
+
+When a Support Engineer resolves a ticket using an article, the article should be linked to the
+ticket in NorthAssist. If no article exists and the same issue has been resolved twice, the engineer
+should raise an article request to the Support Lead. If an article is found to be wrong, the
+engineer must flag it at once; the article owner should correct or withdraw it within 2 business
+days. Articles must never be edited silently after publication: each change goes through the same
+second-person review, and the review date is updated so the 12-month cycle restarts.
+
+Example: Three Standard customers report NX-4003 after upgrading a Connector. The Support Lead asks
+an engineer to draft an article titled "NX-4003 schema mismatch in a Pipeline after a Connector
+update", with the resolution to re-map fields and check the Connector version. A second engineer
+reviews it, and it is published.
+
+
+8. OPEN POINTS IN THIS DRAFT
+----------------------------
+
+  - Whether Hindi articles need their own review.
+  - Whether internal articles should use a different review period.
+  - Whether the Head of Support or Product should approve security-related wording.
+
+
+9. RELATED DOCUMENTS
+--------------------
+
+  - CS-002 for the troubleshooting content that articles are based on.
+  - CS-007 for the triage guide and how tickets lead to articles.
+  - CS-006 for supported versions.
+
+
+10. REVISION HISTORY
+--------------------
+
+  Version | Effective date | Change
+  --------+----------------+-------------------------------------------
+  0.5     | 2026-07-06     | First outline
+  0.9     | 2026-09-15     | Draft circulated for comment; not in force
+

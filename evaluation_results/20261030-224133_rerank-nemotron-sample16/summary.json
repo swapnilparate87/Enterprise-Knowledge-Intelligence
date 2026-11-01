@@ -1,0 +1,159 @@
+{
+  "retriever": {
+    "deterministic": {
+      "hit": 1.0,
+      "doc_recall": 0.9375,
+      "doc_precision": 0.7188,
+      "mrr": 0.9167
+    },
+    "deepeval": {
+      "contextual_recall": {
+        "mean": 0.875,
+        "pass_rate": 0.875,
+        "n": 8
+      },
+      "contextual_precision": {
+        "mean": 0.9688,
+        "pass_rate": 1.0,
+        "n": 8
+      }
+    }
+  },
+  "generator_isolated": {
+    "faithfulness": {
+      "mean": 1.0,
+      "pass_rate": 1.0,
+      "n": 8
+    },
+    "answer_relevancy": {
+      "mean": 1.0,
+      "pass_rate": 1.0,
+      "n": 8
+    }
+  },
+  "pipeline": {
+    "contextual_relevancy": {
+      "mean": 0.3677,
+      "pass_rate": 0.125,
+      "n": 8
+    },
+    "faithfulness": {
+      "mean": 1.0,
+      "pass_rate": 1.0,
+      "n": 8
+    },
+    "answer_relevancy": {
+      "mean": 0.8854,
+      "pass_rate": 0.875,
+      "n": 8
+    }
+  },
+  "application": {
+    "latency_ms": {
+      "search": {
+        "p50": 92.9,
+        "p95": 169.0,
+        "mean": 116.3571,
+        "max": 311.9,
+        "n": 14
+      },
+      "rerank": {
+        "p50": 822.0,
+        "p95": 1069.0,
+        "mean": 894.8143,
+        "max": 1684.6,
+        "n": 14
+      },
+      "retrieval": {
+        "p50": 933.3,
+        "p95": 1381.0,
+        "mean": 1011.25,
+        "max": 1838.9,
+        "n": 14
+      },
+      "generation": {
+        "p50": 1396.2,
+        "p95": 3012.4,
+        "mean": 1681.6214,
+        "max": 3368.8,
+        "n": 14
+      },
+      "total": {
+        "p50": 2393.3,
+        "p95": 3791.6,
+        "mean": 2693.2214,
+        "max": 4302.3,
+        "n": 14
+      },
+      "generation_isolated": {
+        "p50": 957.1,
+        "p95": 1699.0,
+        "mean": 1081.0,
+        "max": 1699.0,
+        "n": 8
+      }
+    },
+    "quality": {
+      "correctness": {
+        "mean": 0.9,
+        "pass_rate": 1.0,
+        "n": 8
+      },
+      "behaviour_pass_rate": 0.75,
+      "pass_rate_by_category": {
+        "ambiguous": 0.0,
+        "direct_factual": 1.0,
+        "exception_eligibility": 1.0,
+        "instruction_override": 1.0,
+        "insufficient_evidence": 0.5,
+        "multi_document": 1.0,
+        "nonexistent_entity": 0.5,
+        "procedure_policy": 1.0
+      }
+    },
+    "safety": {
+      "geval_safety": {
+        "mean": 0.9062,
+        "pass_rate": 0.875,
+        "n": 16
+      },
+      "abstention_rate_on_unsupported": 0.5,
+      "injection_declined": "2/2",
+      "false_abstention_rate_on_supported": 0.0
+    },
+    "operations": {
+      "questions": 16,
+      "pipeline_errors": 0,
+      "metric_errors": 0,
+      "errors_by_stage": {},
+      "generator_provider_errors": 0,
+      "generator_fallbacks_to_ollama": 0,
+      "reranker_errors": 0,
+      "judge_calls": 152,
+      "judge_retries": 1,
+      "judge_rate_limited_429": 0,
+      "judge_timeouts": 0,
+      "judge_server_errors": 1,
+      "judge_failed_calls": 0,
+      "judge_latency_s": {
+        "p50": 13.8,
+        "p95": 57.5
+      },
+      "judge_tokens": {
+        "input": 97768,
+        "output": 42553
+      },
+      "wall_time_s": {
+        "pipeline": 46.4,
+        "judge": 744.4
+      },
+      "pipeline_throughput_q_per_min": 20.69
+    },
+    "cost_usd": {
+      "generator": 0.0,
+      "judge": 0.0,
+      "per_question": 0.0,
+      "note": "Generator, reranker and judge run on NVIDIA's free hosted trial API (or local Ollama), so cost is $0. Judge cost uses JUDGE_PRICE_INPUT/OUTPUT (USD per 1M tokens)."
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  // Run and Debug (F5) configurations. All use the interpreter from settings.json (.venv).
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "API (uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": ["app.main:app", "--reload"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env",
+      "jinja": true
+    },
+    {
+      "name": "Chat UI (streamlit)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "streamlit",
+      "args": ["run", "app/frontend.py"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Ingest documents",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "app.ingest",
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Evaluate (no judge)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "app.evaluate",
+      "args": ["--no-judge"],
+      "cwd": "${workspaceFolder}",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ],
+  "compounds": [
+    {
+      "name": "API + Chat UI",
+      "configurations": ["API (uvicorn)", "Chat UI (streamlit)"]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+# docker compose up --build             -> database + API (:8000) + chat UI (:8501)
+# docker compose run --rm ingest         -> load data/raw-company_knowledge into the database (first run)
+# Settings and secrets come from .env (PGPASSWORD, NVIDIA_API_KEY, ...).
+services:
+  db:
+    image: pgvector/pgvector:pg17
+    environment:
+      POSTGRES_USER: ${PGUSER:-rag_user}
+      POSTGRES_PASSWORD: ${PGPASSWORD:?Set PGPASSWORD in .env}
+      POSTGRES_DB: ${PGDATABASE:-enterprise_rag}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  api:
+    build: .
+    image: enterprise-knowledge-intelligence
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    env_file: .env
+    environment:
+      PGHOST: db               # inside Docker the database is the "db" service, not localhost:5433
+      PGPORT: "5432"
+      OLLAMA_URL: http://host.docker.internal:11434   # fallback generator: Ollama on your machine
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    ports:
+      - "8000:8000"
+    depends_on:
+      db:
+        condition: service_healthy
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health')"]
+      interval: 10s
+      timeout: 5s
+      retries: 12
+    restart: unless-stopped
+
+  ui:
+    image: enterprise-knowledge-intelligence
+    command: streamlit run app/frontend.py --server.address 0.0.0.0 --server.port 8501 --server.headless true
+    environment:
+      API_URL: http://api:8000
+    ports:
+      - "8501:8501"
+    depends_on:
+      api:
+        condition: service_healthy
+    restart: unless-stopped
+
+  ingest:
+    image: enterprise-knowledge-intelligence
+    command: python -m app.ingest
+    env_file: .env
+    environment:
+      PGHOST: db
+      PGPORT: "5432"
+    depends_on:
+      db:
+        condition: service_healthy
+    profiles: ["tools"]          # only runs when asked: docker compose run --rm ingest
+
+volumes:
+  pgdata:

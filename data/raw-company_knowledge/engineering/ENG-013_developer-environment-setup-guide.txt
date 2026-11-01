@@ -1,0 +1,166 @@
+DEVELOPER ENVIRONMENT SETUP GUIDE
+=================================
+
+Document ID:                ENG-013
+Department:                 Engineering
+Document type:              Guide
+Owner:                      Director of Platform Engineering
+Version:                    2.3
+Status:                     RETIRED
+Effective / last reviewed:  2026-06-30
+Audience:                   Engineering staff
+Related documents:          SEC-004, SEC-003
+
+SUMMARY: Retired guide, in force until 30 June 2026, that described how engineers set up a Northstar
+Systems laptop for development. It was replaced by the NorthShip Developer Portal. The legacy steps
+remain here for historical reference only and are OBSOLETE.
+
+SYNTHETIC DOCUMENT - Northstar Systems is a fictional company. This document exists for development,
+testing and demonstration only and is not real legal, employment, security or compliance advice.
+
+
+1. PURPOSE AND SCOPE
+--------------------
+
+RETIRED DOCUMENT. This guide (version 2.3) was retired on 30 June 2026. It is no longer in force and
+must not be followed for new setups. It has been superseded by the NorthShip Developer Portal, which
+now provides the current onboarding and environment setup instructions for engineers. The Developer
+Portal is a separate resource and its content is not reproduced in this knowledge base, so for
+current steps engineers should open the Developer Portal or ask the IT Service Desk (ext. 4000)
+through NorthDesk.
+
+The legacy content below is retained only for historical reference, for example to understand how an
+older laptop was configured or to interpret old support tickets. Every legacy instruction in
+sections 3 to 7 is marked OBSOLETE. Security requirements that apply to developer devices continue
+to be set by the approved security documents (see SEC-003 and SEC-004), not by this retired guide.
+If anything in this retired guide differs from an approved document or from the Developer Portal,
+the approved document or the Developer Portal wins.
+
+The guide originally applied to engineers in Bengaluru, Mumbai and remote locations who received a
+company laptop and needed a local development environment for the Northstar Nexus Platform, Nexus
+Connect or Nexus Insight.
+
+
+2. WHY THE GUIDE WAS RETIRED
+----------------------------
+
+The guide was a static document that had to be edited by hand each time tooling changed, and it
+regularly fell behind the real process. The Platform Engineering team replaced it with the NorthShip
+Developer Portal, which keeps setup steps, tool versions and templates up to date from a single
+source. After 30 June 2026 no further changes were made to this guide, and it was marked retired in
+the document register. Engineers who find a link to this guide in a wiki page, a ticket or a README
+should replace it with a link to the Developer Portal.
+
+
+3. OBSOLETE: LEGACY DAY-ONE CHECKLIST
+-------------------------------------
+
+The following checklist is OBSOLETE and is shown for history only.
+
+  1. OBSOLETE: Collect the laptop from IT on the first working day and confirm the asset tag, which
+     has the form NS-AST- followed by six digits.
+  2. OBSOLETE: Sign in to NorthID with the temporary credentials, set a new password of at least 14
+     characters and enrol multi-factor authentication.
+  3. OBSOLETE: Confirm that NorthGuard reports full-disk encryption as active before installing any
+     source code.
+  4. OBSOLETE: Store every password in NorthVault, including the passphrase for your SSH key.
+  5. OBSOLETE: Connect to NorthTunnel to reach internal repositories and the build system.
+  6. OBSOLETE: Request repository and NorthShip access through the NorthDesk Access Request form;
+     approval needed from your reporting manager and the system owner.
+
+Under the old guide, joiner access was expected to be ready by day 1 of employment, which matched
+the access management rules of the time.
+
+
+4. OBSOLETE: LEGACY TOOLING INSTALLATION
+----------------------------------------
+
+The legacy guide told engineers to install a standard toolset by hand from the internal software
+catalogue. Today this is handled by the Developer Portal, and the list below is OBSOLETE.
+
+  - OBSOLETE: A container runtime and a local Kubernetes-style cluster for running a cut-down copy
+    of the Nexus Platform.
+  - OBSOLETE: The language toolchains used by the team (for example Java, Go or Node.js) at the
+    versions pinned in the team repository.
+  - OBSOLETE: The command line client for NorthShip, used to run pipelines locally in dry-run mode.
+  - OBSOLETE: A code editor from the approved software list. Only approved software was permitted,
+    and unauthorised software remained prohibited.
+  - OBSOLETE: Git configured with commit signing so that tags and release commits could be signed.
+
+Engineers were told not to request local administrator rights, because admin rights are not given to
+standard users. Where an installer needed elevated rights, the guide said to raise a NorthDesk
+ticket and IT staff would install it.
+
+
+5. OBSOLETE: LEGACY REPOSITORY AND BRANCH SETUP
+-----------------------------------------------
+
+The guide said to clone repositories over SSH, create short-lived feature branches from main, and
+never push directly to main, which is protected. This reflected trunk-based development and still
+agrees with the approved engineering standards, but the exact commands in the old guide are OBSOLETE
+and the Developer Portal now provides current repository templates.
+
+Legacy rules for branch names were: feature branches named after the ticket, release branches named
+release/ followed by the version, and hotfix branches named hotfix/ followed by the ticket. Those
+naming conventions are covered by the approved engineering standards rather than by this retired
+guide.
+
+
+6. OBSOLETE: LEGACY LOCAL SECRETS AND TEST DATA
+-----------------------------------------------
+
+The old guide told engineers to load development secrets from NorthVault into a local environment
+file and to delete the file after use. It also said to use only synthetic test data and never to
+copy customer production data to a laptop. Customer production data is Restricted data, and that
+rule continues in the approved security documents. The specific procedure for loading secrets from
+NorthVault in this guide is OBSOLETE; engineers should follow the Developer Portal. No secrets may
+be placed in source code, whichever process is used.
+
+
+7. OBSOLETE: LEGACY PRODUCTION ACCESS NOTE
+------------------------------------------
+
+The old guide noted that production access was not part of day-one setup. Production administration
+was only possible through the NorthGate bastion, with session recording, after privileged access
+approval. That statement is retained for history. Current privileged access rules are defined in the
+approved security documents and in the Developer Portal.
+
+
+8. WHAT TO DO INSTEAD
+---------------------
+
+  - For a new laptop or a rebuild, open the NorthShip Developer Portal and follow its onboarding
+    path.
+  - For access to repositories, NorthShip or any production system, raise an Access Request in
+    NorthDesk, as before.
+  - For a lost or stolen laptop, report to the Security Desk within 1 hour of discovery, and to the
+    IT Service Desk within 24 hours.
+  - For anything not covered, contact the IT Service Desk at ext. 4000.
+
+
+9. FREQUENTLY ASKED QUESTIONS
+-----------------------------
+
+Is this guide still valid? No. It was retired on 30 June 2026.
+
+What replaced it? The NorthShip Developer Portal.
+
+Can I still use the legacy steps for an old laptop? No. Use the Developer Portal. The legacy steps
+are OBSOLETE and kept for historical reference only.
+
+
+10. RELATED DOCUMENTS
+---------------------
+
+  - SEC-003 and SEC-004 contain the approved security rules for devices and access that apply to
+    engineers today.
+
+
+11. REVISION HISTORY
+--------------------
+
+  Version | Date       | Change
+  --------+------------+----------------------------------------------------------------
+  2.2     | 2025-12-04 | Last content update before retirement
+  2.3     | 2026-06-30 | Marked retired and superseded by the NorthShip Developer Portal
+

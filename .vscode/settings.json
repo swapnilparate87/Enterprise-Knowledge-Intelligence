@@ -1,0 +1,10 @@
+{
+  // Always use the project's virtual environment (not Python 3.12 / Anaconda on PATH).
+  "python.defaultInterpreterPath": "${workspaceFolder}\\.venv\\Scripts\\python.exe",
+  // New VS Code terminals activate .venv, so `uvicorn`, `streamlit` and `pytest` come from it.
+  "python.terminal.activateEnvironment": true,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.testing.pytestEnabled": true,
+  "python.testing.unittestEnabled": false,
+  "python.testing.pytestArgs": ["tests", "-p", "no:warnings"]
+}

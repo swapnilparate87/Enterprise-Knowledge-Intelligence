@@ -1,0 +1,228 @@
+HOLIDAY CALENDAR AND WORKING HOURS REFERENCE
+============================================
+
+Document ID:                HR-015
+Department:                 Human Resources
+Document type:              Reference
+Owner:                      Head of People Operations
+Version:                    3.1
+Status:                     APPROVED
+Effective / last reviewed:  2025-08-25
+Audience:                   All employees
+Related documents:          HR-001, HR-003
+
+SUMMARY: Reference sheet for the fictional Northstar Systems holiday calendar for calendar year
+2026, covering 12 company holidays, 6 optional floating holidays with selection rules, standard
+working hours, late-mark rules, hybrid days, core hours, support coverage on holidays and office
+opening times.
+
+SYNTHETIC DOCUMENT - Northstar Systems is a fictional company. This document exists for development,
+testing and demonstration only and is not real legal, employment, security or compliance advice.
+
+
+1. PURPOSE AND SCOPE
+--------------------
+
+This reference lists the Northstar Systems Private Limited holiday calendar for calendar year 2026,
+the standard working hours and the attendance rules that go with them. All holiday names and dates
+in this document are fictional and are used only for Northstar's internal planning; they do not
+claim to match any real public calendar. It applies to all employees in Bengaluru, Mumbai and remote
+locations. Leave types, accrual and approval rules are in HR-001; this document gives the calendar
+and hours that those rules refer to.
+
+Where a holiday is observed by statute in a given state, the more favourable rule for the employee
+applies. Any legal reference here is illustrative; to be verified by Legal before external use.
+
+
+2. DEFINITIONS
+--------------
+
+  - Company holiday: a paid day off on which all Northstar offices are closed and no work is
+    expected, other than approved on-call or customer support coverage.
+  - Floating holiday: an optional holiday chosen by the employee from the list in section 4. Each
+    employee may take 2 floating holidays per calendar year.
+  - Working day: Monday to Friday, excluding company holidays.
+  - Late mark: arrival after 9:30 IST, recorded by badge or NorthPeople check-in.
+  - Core collaboration hours: 11:00 to 16:00 IST, when employees are expected to be available for
+    meetings.
+
+
+3. COMPANY HOLIDAYS 2026
+------------------------
+
+Northstar observes 12 company holidays in calendar year 2026. All of them fall on weekdays, so no
+day is lost to a weekend.
+
+  No. | Date             | Day       | Holiday
+  ----+------------------+-----------+--------------------------------------------------------
+  1   | 1 January 2026   | Thursday  | New Year's Day
+  2   | 26 January 2026  | Monday    | Republic Day
+  3   | 4 March 2026     | Wednesday | Spring Festival
+  4   | 3 April 2026     | Friday    | Spring Observance Day
+  5   | 1 May 2026       | Friday    | Labour Day
+  6   | 14 August 2026   | Friday    | Independence Day (observed, as 15 August is a Saturday)
+  7   | 2 October 2026   | Friday    | Gandhi Jayanti
+  8   | 20 October 2026  | Tuesday   | Autumn Festival
+  9   | 12 November 2026 | Thursday  | Festival of Lights, Day 1
+  10  | 13 November 2026 | Friday    | Festival of Lights, Day 2
+  11  | 23 November 2026 | Monday    | Founders' Day
+  12  | 25 December 2026 | Friday    | Year-End Day
+
+Notes on company holidays:
+
+  - Founders' Day marks the founding of Northstar in 2012 and is a company-only holiday.
+  - If a company holiday is moved by the company, the Chief People Officer announces the change at
+    least 30 calendar days in advance by email and in NorthPeople.
+  - A company holiday that falls inside an approved leave period is not counted as leave.
+  - Employees who are required to work on a company holiday, for example on-call engineers or
+    support staff, receive compensatory off, which must be used within 60 days.
+
+
+4. OPTIONAL FLOATING HOLIDAYS 2026
+----------------------------------
+
+Each employee may choose 2 floating holidays from the following list of 6. They are in addition to
+the 12 company holidays.
+
+  No. | Date             | Day       | Optional holiday
+  ----+------------------+-----------+---------------------
+  F1  | 14 January 2026  | Wednesday | Harvest Festival
+  F2  | 20 March 2026    | Friday    | Spring New Year
+  F3  | 29 May 2026      | Friday    | Midyear Observance
+  F4  | 7 September 2026 | Monday    | Late Summer Festival
+  F5  | 16 October 2026  | Friday    | Autumn Eve
+  F6  | 24 December 2026 | Thursday  | Year-End Eve
+
+Rules for floating holidays:
+
+  1. Choose in NorthPeople under Leave, then Floating Holidays. An employee should make the choice
+     by 31 January 2026, and new joiners within 30 days of joining.
+  2. Only 2 floating holidays may be taken in the calendar year. Unused floating holidays lapse on
+     31 December and cannot be encashed or carried forward.
+  3. A choice can be changed up to 7 calendar days before the chosen date.
+  4. Floating holidays follow the manager approval rule: the manager must approve or reject within 2
+     working days in NorthPeople or the request escalates to the department head. Managers should
+     approve unless a customer commitment or on-call duty makes it impossible, in which case the
+     manager offers another date from the list that is still available.
+  5. Floating holidays do not reduce the balance of Casual Leave, Sick Leave or Earned Leave.
+
+Example: An employee at the Powai office picks F1 (14 January) and F6 (24 December) in NorthPeople
+on 20 January. Later she asks to swap F6 for F5 (16 October). If she makes the change on or before 9
+October, which is 7 calendar days before 16 October, the swap is allowed.
+
+
+5. STANDARD WORKING HOURS
+-------------------------
+
+The standard working day is 9:30 to 18:30 IST, which includes a 1 hour lunch break. The working week
+is Monday to Friday. Saturdays and Sundays are weekly offs unless a role has an approved roster.
+
+Core collaboration hours are 11:00 to 16:00 IST. Meetings with participants from more than one team
+should be scheduled inside core hours. Employees may adjust their start or end times with the
+manager's agreement, provided they are present during core hours and complete the standard daily
+hours.
+
+
+5.1 Late marks
+
+The late-arrival grace is up to 3 late marks per month, each of up to 30 minutes. The 4th late mark
+in a month is deducted as half-day casual leave. An arrival more than 30 minutes after 9:30 IST is
+treated as a half-day or loss-of-pay absence unless the manager approves the exception in
+NorthPeople.
+
+Example: An employee arrives at 9:45, 9:50 and 10:00 on three days in a month and uses all 3 late
+marks. On a fourth day in the same month, she arrives at 9:40. A half-day of casual leave (0.5 day)
+is deducted from her Casual Leave balance of 8 days per calendar year.
+
+
+5.2 Hybrid working
+
+The hybrid default is 3 days in office per week. The anchor days are Tuesday, Wednesday and
+Thursday, when all hybrid teams are expected to be in office to support collaboration. Employees may
+choose the other in-office day or days with the manager's agreement. Fully remote roles must be
+approved by the VP of the function and the Chief People Officer.
+
+
+5.3 Working from another location
+
+Working from a location other than the registered city for more than 10 working days in a year needs
+HR and Security approval. Employees must apply in advance through NorthDesk and HR, and the request
+includes dates, location, network arrangement and confirmation that corporate data will be accessed
+only through NorthTunnel with MFA via NorthID.
+
+
+5.4 Remote working allowances
+
+Fully remote employees receive a work-from-home allowance of INR 1,500 per month to cover internet
+and utilities. A one-time home-office setup reimbursement of up to INR 15,000 may be claimed once
+every 3 years, with receipts, through NorthPay.
+
+
+6. OFFICES, SUPPORT COVERAGE AND HOLIDAYS
+-----------------------------------------
+
+  - Offices in Bengaluru (Northstar Tower, Whitefield) and Mumbai (Powai) are open from 8:00 to
+    20:00 on working days. Weekend access needs manager approval via NorthDesk.
+  - Offices are closed on company holidays. Visitors are not scheduled on those days.
+  - Standard-tier customer support hours are 9:00 to 19:00 IST Monday to Friday, excluding company
+    holidays. Premier and Enterprise customers have 24x7 coverage for P1 and P2 issues, including on
+    company holidays, provided through a roster of Customer Success staff. Staff on the roster
+    receive compensatory off.
+  - Production on-call continues through all holidays. The weekly on-call rotation changes on Monday
+    at 10:00 IST; if the Monday is a company holiday, the handover still happens at 10:00 IST by
+    call or chat.
+  - Payroll is credited on the last working day of the month. If the last day of a month is a
+    company holiday or weekend, payroll is credited on the preceding working day.
+  - Payment runs to vendors happen every Tuesday and Friday; when one of these is a company holiday,
+    the run moves to the next working day.
+
+Example: 31 October 2026 is a Saturday, so October payroll is credited on Friday 30 October 2026. In
+contrast, 24 December 2026 is a Thursday and an optional holiday, so the standard payroll and
+payment runs are not affected by it.
+
+
+7. PLANNING NOTES FOR MANAGERS
+------------------------------
+
+  - Review the holiday calendar before setting sprint dates, release dates and customer commitments.
+    Production deployments are normally in the window Tuesday to Thursday, so the Autumn Festival on
+    Tuesday 20 October reduces the available window in that week.
+  - Avoid scheduling mandatory meetings on floating holiday dates where many team members may have
+    chosen them. NorthPeople shows the floating holiday choices of a team to the manager.
+  - Plan coverage for 12 and 13 November (two consecutive holidays) and for the period from 24 to 25
+    December in advance. Teams with customer commitments must publish a coverage roster at least 10
+    working days before.
+  - Employees may combine floating holidays and Earned Leave to make long breaks; Earned Leave of 5
+    or more consecutive working days needs 10 working days' notice.
+
+
+8. QUICK REFERENCE
+------------------
+
+  Item              | Rule
+  ------------------+--------------------------------------------------------------------
+  Company holidays  | 12 per calendar year
+  Floating holidays | 2 chosen from a list of 6
+  Standard day      | 9:30 to 18:30 IST, 1 hour lunch
+  Core hours        | 11:00 to 16:00 IST
+  Late marks        | 3 per month up to 30 minutes each; the 4th is half-day casual leave
+  Hybrid            | 3 days in office, anchor days Tuesday, Wednesday and Thursday
+  Compensatory off  | Use within 60 days
+  Office opening    | 8:00 to 20:00 on working days
+
+
+9. RELATED DOCUMENTS
+--------------------
+
+Leave types, balances and approvals are in HR-001. Probation, hours of work for new joiners and
+related onboarding are in HR-003.
+
+
+10. REVISION HISTORY
+--------------------
+
+  Version | Date       | Change
+  --------+------------+------------------------------------------------------------------
+  3.0     | 2025-01-06 | Calendar format changed to a reference sheet
+  3.1     | 2025-08-25 | Added floating holiday selection rules and support coverage notes
+

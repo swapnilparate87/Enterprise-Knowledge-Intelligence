@@ -1,15 +1,25 @@
-langchain-community
-langchain-text-splitters
-pypdf
+# API + UI
+fastapi>=0.115
+uvicorn[standard]>=0.30
+streamlit>=1.40
+requests>=2.32
 
-sentence-transformers
+# Database
+psycopg[binary]>=3.2
+pgvector>=0.3
+python-dotenv>=1.0
 
-psycopg[binary]
-pgvector
+# Ingestion + embeddings
+pypdf>=5.0
+docx2txt>=0.8
+langchain-text-splitters>=0.3
+sentence-transformers>=3.0
+numpy>=1.26
 
-python-dotenv
+# Tests (httpx is needed by FastAPI's TestClient)
+pytest>=8.0
+httpx>=0.27
 
-fastapi
-uvicorn[standard]
-
-pytest
+# Evaluation (LLM-as-a-judge on NVIDIA's OpenAI-compatible API)
+deepeval==4.3.2
+openai>=1.40

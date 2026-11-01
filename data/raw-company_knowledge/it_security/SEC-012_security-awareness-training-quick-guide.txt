@@ -1,0 +1,196 @@
+SECURITY AWARENESS TRAINING QUICK GUIDE
+=======================================
+
+Document ID:                SEC-012
+Department:                 IT and Information Security
+Document type:              Guide
+Owner:                      GRC Manager
+Version:                    4.4
+Status:                     APPROVED
+Effective / last reviewed:  2026-03-20
+Audience:                   All employees and contractors
+Related documents:          SEC-001, HR-005, SEC-006
+
+SUMMARY: Quick guide to Northstar Systems security awareness training, covering joiner and annual
+courses in NorthLearn, quarterly phishing simulations, the three-failure retraining rule, how to
+report suspicious messages and the everyday habits every employee and contractor must follow.
+
+SYNTHETIC DOCUMENT - Northstar Systems is a fictional company. This document exists for development,
+testing and demonstration only and is not real legal, employment, security or compliance advice.
+
+
+1. PURPOSE AND SCOPE
+--------------------
+
+This guide gives employees and contractors of Northstar Systems Private Limited a short, practical
+summary of security awareness training: what training must be completed, when, how phishing
+simulations work, what happens after repeated failures, and the daily habits that keep company and
+customer data safe. It applies to all employees (Bengaluru, Mumbai and remote) and to contractors
+who hold a corporate identity in NorthID. It is a quick guide; the binding rules sit in the
+Information Security Policy (SEC-001), the Code of Conduct (see SEC-006) and the access, device and
+data policies they refer to.
+
+
+2. REQUIRED TRAINING AT A GLANCE
+--------------------------------
+
+  Training                                         | Who                                         | Deadline                                         | Where
+  -------------------------------------------------+---------------------------------------------+--------------------------------------------------+----------------
+  Security Foundations course                      | New joiners and contractors                 | Within 14 days of joining                        | NorthLearn
+  Annual security refresher                        | All employees and contractors               | Once every year, by the date shown in NorthLearn | NorthLearn
+  Quarterly phishing simulation                    | All employees with a corporate mailbox      | Runs every quarter without advance notice        | Corporate email
+  Retraining module                                | Anyone who fails 3 simulations in 12 months | Within 10 working days of assignment             | NorthLearn
+  Role-based modules (developers, admins, finance) | Staff in those roles                        | As assigned by the GRC team                      | NorthLearn
+
+New joiners must complete the Security Foundations course within 14 days of their joining date. The
+course is assigned automatically in NorthLearn when the HR onboarding tasks in NorthPeople are
+created (see HR-005). Completion is tracked, and the GRC Manager's team reports overdue completions
+to department heads every month.
+
+
+3. THE SECURITY FOUNDATIONS COURSE
+----------------------------------
+
+The course takes about 90 minutes and can be paused and resumed. It covers:
+
+  - Recognising phishing, smishing (SMS) and voice-call scams.
+  - Passwords, multi-factor authentication and NorthVault.
+  - Data classification: Public, Internal, Confidential and Restricted.
+  - Safe use of laptops, mobile devices and public networks.
+  - Acceptable use, including the Approved AI Tools list.
+  - How to report an incident and why speed matters.
+
+A pass mark of 80% on the final quiz is required. A learner may retake the quiz as many times as
+needed; the course is complete only when the pass mark is reached. Contractors who cannot access
+NorthLearn must ask their Northstar sponsor to raise a NorthDesk ticket so an account can be
+provisioned.
+
+Example: A new Software Engineer in Bengaluru joins on 3 June. The 14-day deadline is 17 June. If
+the course is still incomplete on 17 June, the learner's manager is notified, and access to some
+non-essential systems may be limited by the Security Desk until the course is finished.
+
+
+4. ANNUAL REFRESHER
+-------------------
+
+Every employee and contractor must complete the annual refresher, a shorter course of about 45
+minutes that covers changes in threats, policy updates and lessons from real incidents. NorthLearn
+shows the due date on the learner's dashboard and sends reminders 30 days, 14 days and 3 days before
+it. Anyone who joined within the last 6 months and completed Security Foundations is credited for
+that year's refresher.
+
+
+5. PHISHING SIMULATIONS
+-----------------------
+
+The GRC team sends simulated phishing messages to employees every quarter. The messages imitate real
+attack styles, such as a fake courier notice, a fake HR payroll update or a fake NorthID password
+prompt. Timing and content are not announced in advance.
+
+An employee is counted as having "failed" a simulation if they click the link, open the attachment
+or enter any information on the landing page. Reporting the message with the Report Phish button
+counts as a pass. Ignoring the message and deleting it is neutral: it is not a failure but it does
+not help the Security Desk, so reporting is always preferred.
+
+
+5.1 The three-failure rule
+
+An employee who fails 3 simulations within any rolling 12 months must complete the mandatory
+retraining module in NorthLearn and have a conversation with their manager about secure working
+habits. The conversation is supportive and not disciplinary; its purpose is to find out whether
+workload, a confusing mailbox setup or lack of understanding is the cause. Repeated failures after
+retraining may be raised with HR under the Code of Conduct, but a simulation result alone does not
+lead to a warning.
+
+Example: Priya in Customer Success clicks the simulated "courier delivery" link in January, the
+simulated "payslip" link in April, and the simulated "NorthID MFA reset" link in October. The third
+failure falls inside 12 months, so NorthLearn assigns the retraining module and the Security Desk
+informs her manager to schedule the conversation.
+
+
+5.2 Privacy of results
+
+Individual simulation results are visible only to the GRC team, the employee and, for the three-
+failure rule, the employee's manager. Department-level statistics shared with leadership never name
+individuals.
+
+
+6. REPORTING SUSPICIOUS ACTIVITY
+--------------------------------
+
+  - Suspicious email: click the Report Phish button in the mail client. Do not forward the message
+    to colleagues.
+  - Any other suspected incident, such as a lost laptop, a strange login prompt, a wrong-recipient
+    email or malware: contact the Security Desk immediately on ext. 5555 or at security@northstar-
+    systems.example.
+  - A lost or stolen device must be reported to the Security Desk within 1 hour of discovery. Late
+    reporting makes remote wipe and customer risk assessment harder.
+  - You will never be penalised for reporting in good faith, even if it turns out to be a false
+    alarm or you clicked something by mistake. Early reporting is always better than silence.
+
+
+7. EVERYDAY HABITS CHECKLIST
+----------------------------
+
+  - Use a password of at least 14 characters, store it in NorthVault and never reuse it across
+    systems. Passwords are not rotated on a schedule; change one immediately if you suspect
+    compromise.
+  - Approve MFA prompts in NorthID only for logins you started yourself. If you receive a prompt you
+    did not trigger, deny it and report it.
+  - Lock your screen whenever you step away; the device locks automatically after 5 minutes.
+  - Use only company laptops for company work. Do not use personal laptops.
+  - Never put Confidential or Restricted data into external AI tools. Use only tools on the Approved
+    AI Tools list.
+  - Do not send Restricted data through personal email or messaging apps. Use approved sharing tools
+    only.
+  - Escort visitors and challenge anyone in the office without a badge.
+  - Connect to internal applications through NorthTunnel when working remotely, and avoid public Wi-
+    Fi for company work unless the VPN is active.
+  - Do not install unauthorised software or plug unknown USB drives into your laptop.
+
+
+8. FREQUENTLY ASKED QUESTIONS
+-----------------------------
+
+What if I am on long leave when the deadline falls? The deadline is extended by the length of
+approved leave. Tell the GRC team through NorthDesk and complete the course within 14 days of
+returning.
+
+Do contractors have to take the same training? Yes. Contractors with a corporate identity follow the
+same schedule and the same three-failure rule.
+
+Can I skip the refresher because I work in security? No. Everyone completes it. Security staff may
+additionally take advanced modules.
+
+I clicked on a real phishing email. What now? Disconnect from the network if you can, then call the
+Security Desk on ext. 5555 straight away. Do not try to fix it yourself and do not wait to see if
+anything happens.
+
+
+9. RESPONSIBILITIES
+-------------------
+
+  - Employees and contractors must complete assigned training on time and report incidents promptly.
+  - Managers should give staff time to complete training and must hold the conversation required
+    after three failed simulations.
+  - The GRC Manager owns the programme, content, pass marks and reporting.
+  - The Security Desk runs the simulations and handles reported messages.
+  - HR (People Team) assigns the joiner course through NorthPeople onboarding tasks.
+
+
+10. RELATED DOCUMENTS
+---------------------
+
+See SEC-001 for the Information Security Policy, HR-005 for the onboarding procedure that triggers
+the joiner course, and SEC-006 for acceptable use and conduct expectations.
+
+
+11. REVISION HISTORY
+--------------------
+
+  Version | Date       | Change
+  --------+------------+--------------------------------
+  4.2     | 2025-09-12 | Added three-failure rule detail
+  4.3     | 2025-12-01 | Clarified contractor coverage
+  4.4     | 2026-03-20 | Updated checklist and FAQ
+
